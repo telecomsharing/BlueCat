@@ -9,7 +9,7 @@
 
 # %include /usr/share/spin-kickstarts/bluecat-repo.ks
 # %include /usr/share/spin-kickstarts/bluecat-packages.ks
-%include /usr/share/spin-kickstarts/bluecat-live.ks
+%include bluecat-live.ks
 
 
 
