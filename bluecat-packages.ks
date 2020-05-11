@@ -8,14 +8,15 @@
 
 %packages
 
-# Office (checked)
+# Office
 @libreoffice
 libreoffice-writer2latex
 # parley # drop?
 keepassx
 sigil
 calibre
-tomboy
+# tomboy
+qownnotes
 pdfmod
 planner
 dia
@@ -28,7 +29,7 @@ gimp
 gimp-data-extras
 inkscape
 
-# Science (checked)
+# Science
 texmaker # now it icludes texlive dependencies
 texlive
 # texlive-latex # included in @development-tools
@@ -40,9 +41,9 @@ texlive-multirow
 texlive-subfigure
 texlive-subfloat
 kbibtex
-cantor
-cantor-R
-maxima
+# cantor
+# cantor-R
+# maxima
 octave
 octave-audio
 octave-communications
@@ -56,7 +57,7 @@ octave-specfun
 octave-statistics
 # octave-struct # included in octave-optim
 octave-doc
-qtoctave
+# qtoctave
 fig2ps
 pstoedit
 gnuplot
@@ -64,7 +65,7 @@ wireshark-qt
 linsmith
 ktechlab
 
-# Development (checked)
+# Development
 @development-tools
 @development-libs
 kate
@@ -74,17 +75,18 @@ eclipse
 # fedora-kickstarts
 # spin-kickstarts
 # livecd-tools
-java
+# java
 icedtea-web
 
-# Desktop (checked)
+# Desktop
 # kdeartwork* # drop?
 # plasma-workspace-wallpapers # drop?
 # sddm-themes # drop?
 dolphin-plugins
 # nautilus-dropbox # drop?
+nextcloud-client
 
-# System (checked)
+# System
 @virtualization
 lxc
 lxc-templates
@@ -106,7 +108,7 @@ mesa-vdpau-drivers
 backintime-common
 backintime-kde
 
-# Multimedia and codecs (not sure if need this)
+# Multimedia and codecs
 gstreamer1-libav
 gstreamer1-plugins-bad-free-extras
 gstreamer1-plugins-bad-freeworld
@@ -123,18 +125,6 @@ gstreamer-plugins-ugly
 gstreamer-ffmpeg
 libdvdread
 libdvdnav
-
-# Games
-# kdegames
-# playonlinux
-# knights
-# freedoom
-# alienarena
-# warzone2100
-# urbanterror
-# chromium-bsu
-# frozen-bubble
-# supertux
-# supertuxkart
+vlc
 
 %end

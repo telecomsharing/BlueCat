@@ -10,3 +10,4 @@ repo --name="RPMFusion Non-Free - Updates" --mirrorlist=http://mirrors.rpmfusion
 #repo --name="Dropbox" --baseurl=http://linux.dropbox.com/fedora/$releasever
 #repo --name="ownCloud" --baseurl=http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/Fedora_27
 repo --name="PlayOnLinux" --baseurl=http://rpm.playonlinux.com/fedora/yum/base
+repo --name="QOwnNotes" baseurl=http://download.opensuse.org/repositories/home:/pbek:/QOwnNotes/Fedora_32/
