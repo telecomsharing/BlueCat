@@ -66,7 +66,7 @@ gnuplot
 linsmith
 ktechlab
 
-# Development
+# Development and ns3
 @development-tools
 @development-libs
 kate
@@ -76,8 +76,45 @@ eclipse
 # fedora-kickstarts
 # spin-kickstarts
 # livecd-tools
-# java
+# java # already in f32
 icedtea-web
+mercurial 
+gsl-devel 
+qt5-devel 
+valgrind 
+graphviz 
+ImageMagick 
+python-sphinx 
+texlive-fncychap 
+texlive-capt-of 
+texlive-tabulary 
+texlive-eqparbox 
+texlive-epstopdf 
+texlive-framed 
+texlive-dvipng 
+texlive-threeparttable 
+texlive-wrapfig 
+ImageMagick 
+flex 
+bison 
+sqlite-devel 
+uncrustify 
+openmpi 
+openmpi-devel 
+goocanvas-devel 
+graphviz-devel 
+python-kiwi 
+# pygoocanvas # not yet in f32
+ipython 
+cmake 
+clang-devel 
+llvm-devel 
+llvm-static 
+cvs
+pygobject2
+pygobject3-devel 
+gobject-introspection-devel 
+goocanvas2-devel 
 
 # Desktop
 # kdeartwork* # drop?

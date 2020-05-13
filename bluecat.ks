@@ -28,7 +28,7 @@ generic-release
 generic-release-notes
 
 # remove calligra
-# -calligra*
+-calligra*
 
 # admin-tools
 #-gnome-disk-utility

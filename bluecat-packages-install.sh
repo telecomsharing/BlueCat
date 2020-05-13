@@ -3,8 +3,8 @@
 # Description     :This script will install BlueCat packages on Fedora.
 # Author		  :Luis Sequeira
 # Date            :11/05/2020
-# Version         :2.1    
-# Usage		      :./bluecat-packages-install.sh --games --repos  --remove
+# Version         :2.2    
+# Usage		      :./bluecat-packages-install.sh --games --repos  --remove --ns3
 # ==============================================================================
 
 while [ -n "$1" ]; do
@@ -26,6 +26,12 @@ while [ -n "$1" ]; do
             echo "Calligra will be removed"
             echo "==========================="
             REMOVE=true
+            ;;
+        --ns3)
+            echo "==========================="
+            echo "NS3 will be added"
+            echo "==========================="
+            NS3=true
             ;;
         *)
             echo "==========================="
@@ -161,7 +167,63 @@ sudo dnf install -y \
     gstreamer-ffmpeg \
     libdvdread \
     libdvdnav \
-    vlc
+    vlc 
+
+if [ ! -z "$NS3" ]; then
+    echo "==========================="
+    echo "Installinng NS3 3.30.1"
+    echo "==========================="
+
+    sudo dnf install -y \
+        mercurial \
+        gsl-devel \
+        qt5-devel \
+        valgrind \
+        graphviz \
+        ImageMagick \
+        python-sphinx \
+        texlive-fncychap \
+        texlive-capt-of \
+        texlive-tabulary \
+        texlive-eqparbox \
+        texlive-epstopdf \
+        texlive-framed \
+        texlive-dvipng \
+        texlive-threeparttable \
+        texlive-wrapfig \
+        ImageMagick \
+        flex \
+        bison \
+        sqlite-devel \
+        uncrustify \
+        openmpi \
+        openmpi-devel \
+        goocanvas-devel \
+        graphviz-devel \
+        python-kiwi \
+        ipython \
+        cmake \
+        clang-devel \
+        llvm-devel \
+        llvm-static \
+        cvs \
+        pygobject2 \
+        pygobject3-devel \
+        gobject-introspection-devel \
+        goocanvas2-devel 
+    
+    sudo easy_install pygraphviz
+    sudo pip install cxxfilt
+    git clone https://gitlab.com/nsnam/bake
+    cd bake
+    export BAKE_HOME=`pwd`/bake
+    export PATH=$PATH:$BAKE_HOME
+    export PYTHONPATH=$PYTHONPATH:$BAKE_HOME
+    ./bake.py check
+    ./bake.py configure -e ns-3.30.1
+    ./bake.py deploy
+    cd ..
+fi
 
 if [ ! -z "$GAMES" ]; then
     echo "==========================="

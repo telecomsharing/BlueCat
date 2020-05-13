@@ -3,7 +3,7 @@
 # Description     :This script will create BlueCat.
 # Author		  :Luis Sequeira
 # Date            :11/05/2020
-# Version         :2.1    
+# Version         :2.2    
 # Usage		      :./create-bluecat.sh --games --clean
 #==============================================================================
 
@@ -54,9 +54,15 @@ setenforce 0
 sleep 1
 
 if [ ! -z "$GAMES" ]; then
-	livecd-creator --verbose --config=${working_dir}/bluecat-games.ks --fslabel=BlueCat-Games --cache=/var/cache/live
+	livecd-creator --verbose \
+		--config=${working_dir}/bluecat-games.ks \
+		--fslabel=BlueCat-Games \
+		--cache=/var/cache/live
 else
-	livecd-creator --verbose --config=${working_dir}/bluecat.ks --fslabel=BlueCat --cache=/var/cache/live
+	livecd-creator --verbose \
+		--config=${working_dir}/bluecat.ks \
+		--fslabel=BlueCat \
+		--cache=/var/cache/live
 fi
 
 setenforce 1
