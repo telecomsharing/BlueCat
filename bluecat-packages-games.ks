@@ -1,4 +1,4 @@
-# bluecat-packages.ks
+# bluecat-packages-games.ks
 #
 # Description:
 # - Packages for BlueCat Games with the K Desktop Environment (KDE)

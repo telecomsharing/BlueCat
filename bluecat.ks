@@ -12,7 +12,6 @@
 %include bluecat-live.ks
 
 
-
 # DVD payload
 part / --size=16384
 
@@ -29,22 +28,5 @@ generic-release-notes
 
 # remove calligra
 -calligra*
-
-# admin-tools
-#-gnome-disk-utility
-# kcm_clock still lacks some features, so keep system-config-date around
-# -system-config-date
-# prefer kcm_systemd
-#-system-config-services
-# prefer/use kusers
-#-system-config-users
-
-# conflicts
-# -libcrypt
-# libcrypt-nss
-
-%end
-
-%post
 
 %end

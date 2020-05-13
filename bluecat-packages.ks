@@ -6,16 +6,15 @@
 # Maintainer(s):
 # - Luis Sequeira <sequeira@telecomsharing.com>
 
+
 %packages
 
 # Office
 @libreoffice
 libreoffice-writer2latex
-# parley # drop?
 keepassx
 sigil
 calibre
-# tomboy
 qownnotes
 pdfmod
 # planner # not yet in f32
@@ -30,9 +29,8 @@ gimp-data-extras
 inkscape
 
 # Science
-texmaker # now it icludes texlive dependencies
+texmaker
 texlive
-# texlive-latex # included in @development-tools
 texlive-biblatex
 texlive-biblatex-ieee*
 texlive-IEEE*
@@ -41,28 +39,21 @@ texlive-multirow
 texlive-subfigure
 texlive-subfloat
 kbibtex
-# cantor
-# cantor-R
-# maxima
 octave
 # octave-audio # not yet in f32
 octave-communications
-# octave-control # included in octave-communications
 octave-general
-# octave-image # included in octave-communications
 octave-io
 octave-optim
-# octave-signal # included in octave-communications
 octave-specfun
 octave-statistics
-# octave-struct # included in octave-optim
 octave-doc
 # qtoctave # not yet in f32
 fig2ps
 pstoedit
 gnuplot
 # wireshark-qt # not yet in f32
-# wireshark
+wireshark
 linsmith
 ktechlab
 
@@ -70,13 +61,8 @@ ktechlab
 @development-tools
 @development-libs
 kate
-# kate-plugins # included in kate
 kdiff3
 eclipse
-# fedora-kickstarts
-# spin-kickstarts
-# livecd-tools
-# java # already in f32
 icedtea-web
 mercurial 
 gsl-devel 
@@ -117,11 +103,7 @@ gobject-introspection-devel
 goocanvas2-devel 
 
 # Desktop
-# kdeartwork* # drop?
-# plasma-workspace-wallpapers # drop?
-# sddm-themes # drop?
 dolphin-plugins
-# nautilus-dropbox # drop?
 nextcloud-client
 
 # System
@@ -138,7 +120,6 @@ wget
 filelight
 terminator
 hplip
-# hplip-common # already installed with hplip
 libsane-hpaio
 mesa-dri-drivers # already installed
 mesa-libGLU # already installed
@@ -153,8 +134,8 @@ gstreamer1-plugins-bad-freeworld
 gstreamer1-plugins-good-extras
 gstreamer1-plugins-ugly
 gstreamer-ffmpeg
-xine-lib-extras # not yet in f32
-xine-lib-extras-freeworld # not yet in f32
+xine-lib-extras 
+xine-lib-extras-freeworld 
 # k3b-extras-freeworld # not yet in f32
 gstreamer-plugins-bad
 # gstreamer-plugins-bad-free-extras # not yet in f32

@@ -1,17 +1,20 @@
 # bluecat-live.ks
 #
+# Description:
+# - BlueCat live user configuration for the K Desktop Environment (KDE)
+#
 # Maintainer(s):
 # - Luis Sequeira <sequeira@telecomsharing.com>
 
 %include /usr/share/spin-kickstarts/fedora-live-base.ks
 %include /usr/share/spin-kickstarts/fedora-kde-common.ks
 
-#%post --nochroot
+%post --nochroot
 
 # We copy the files of our machine's user test to the skel of the new ISO
-# cp -a /home/liveuser/\. $INSTALL_ROOT/etc/skel
+cp -a /home/liveuser/\. $INSTALL_ROOT/etc/skel
 
-#%end
+%end
 
 %post
 
@@ -46,7 +49,7 @@ fi
 mkdir -p /home/liveuser/.config/
 cat > /home/liveuser/.config/kickoffrc << MENU_EOF
 [Favorites]
-FavoriteURLs=/usr/share/applications/firefox.desktop,/usr/share/applications/org.kde.dolphin.desktop,/usr/share/applications/systemsettings.desktop,/usr/share/applications/org.kde.konsole.desktop,/usr/share/applications/liveinst.desktop
+FavoriteURLs=/usr/share/applications/firefox.desktop,/usr/share/applications/org.kde.dolphin.desktop,/usr/share/applications/systemsettings.desktop,/usr/share/applications/org.kde.konsole.desktop,/home/liveuser/Desktop/liveinst.desktop
 MENU_EOF
 
 # show liveinst.desktop on desktop and in menu
@@ -55,6 +58,8 @@ sed -i 's/NoDisplay=true/NoDisplay=false/' /usr/share/applications/liveinst.desk
 chmod +x /usr/share/applications/liveinst.desktop
 mkdir /home/liveuser/Desktop
 cp -a /usr/share/applications/liveinst.desktop /home/liveuser/Desktop/
+sed -i '/Icon/ d' /home/liveuser/Desktop/liveinst.desktop
+echo "Icon=install" >> /home/liveuser/Desktop/liveinst.desktop
 
 # Set akonadi backend
 mkdir -p /home/liveuser/.config/akonadi
