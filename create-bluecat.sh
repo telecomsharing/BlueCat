@@ -53,7 +53,7 @@ echo "==========================="
 setenforce 0
 sleep 1
 
-if [ ! z "$GAMES" ]; then
+if [ ! -z "$GAMES" ]; then
 	livecd-creator --verbose --config=${working_dir}/bluecat-games.ks --fslabel=BlueCat-Games --cache=/var/cache/live
 else
 	livecd-creator --verbose --config=${working_dir}/bluecat.ks --fslabel=BlueCat --cache=/var/cache/live
@@ -65,7 +65,7 @@ echo "==========================="
 echo "Livecd-creator has finished"
 echo "==========================="
 
-if [ ! z "$GAMES" ]; then
+if [ ! -z "$GAMES" ]; then
 	if [ -f "${working_dir}/BlueCat-Games.iso" ]; then
 		echo "BlueCat Games has been created"
 		echo "Creating md5 file"

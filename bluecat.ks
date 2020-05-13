@@ -7,8 +7,8 @@
 # - Luis Sequeira <sequeira@telecomsharing.com>
 
 
-# %include /usr/share/spin-kickstarts/bluecat-repo.ks
-# %include /usr/share/spin-kickstarts/bluecat-packages.ks
+%include bluecat-repo.ks
+%include bluecat-packages.ks
 %include bluecat-live.ks
 
 

@@ -18,7 +18,7 @@ calibre
 # tomboy
 qownnotes
 pdfmod
-planner
+# planner # not yet in f32
 dia
 dia-CMOS
 dia-electric2
@@ -45,7 +45,7 @@ kbibtex
 # cantor-R
 # maxima
 octave
-octave-audio
+# octave-audio # not yet in f32
 octave-communications
 # octave-control # included in octave-communications
 octave-general
@@ -57,11 +57,12 @@ octave-specfun
 octave-statistics
 # octave-struct # included in octave-optim
 octave-doc
-# qtoctave
+# qtoctave # not yet in f32
 fig2ps
 pstoedit
 gnuplot
-wireshark-qt
+# wireshark-qt # not yet in f32
+# wireshark
 linsmith
 ktechlab
 
@@ -102,8 +103,8 @@ terminator
 hplip
 # hplip-common # already installed with hplip
 libsane-hpaio
-# mesa-dri-drivers # already installed
-# mesa-libGLU # already installed
+mesa-dri-drivers # already installed
+mesa-libGLU # already installed
 mesa-vdpau-drivers
 backintime-common
 backintime-kde
@@ -115,11 +116,11 @@ gstreamer1-plugins-bad-freeworld
 gstreamer1-plugins-good-extras
 gstreamer1-plugins-ugly
 gstreamer-ffmpeg
-xine-lib-extras
-xine-lib-extras-freeworld
-k3b-extras-freeworld
+xine-lib-extras # not yet in f32
+xine-lib-extras-freeworld # not yet in f32
+# k3b-extras-freeworld # not yet in f32
 gstreamer-plugins-bad
-gstreamer-plugins-bad-free-extras
+# gstreamer-plugins-bad-free-extras # not yet in f32
 gstreamer-plugins-bad-nonfree
 gstreamer-plugins-ugly
 gstreamer-ffmpeg
