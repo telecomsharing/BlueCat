@@ -11,8 +11,9 @@
 
 %post --nochroot
 
-# We copy the files of our machine's user test to the skel of the new ISO
-cp -a /home/liveuser/\. $INSTALL_ROOT/etc/skel
+# copy configuration files to the skel of the new ISO
+cp -a /home/bluecat/\.* $INSTALL_ROOT/etc/skel
+sed -i -e 's/Generic release/BlueCat/g' /etc/fedora-release /etc/issue
 
 %end
 
