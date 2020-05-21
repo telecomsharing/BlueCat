@@ -7,6 +7,9 @@
 # Usage		  :./create-bluecat.sh --games --clean
 #==============================================================================
 
+start_time=`date +%s`
+echo ""
+echo "Starting at ${start_time}"
 working_dir=${PWD}
 
 while [ -n "$1" ]; do
@@ -100,3 +103,7 @@ else
 		echo "There was a error and BlueCat.iso was not created"
 	fi
 fi
+
+end_time=`date +%s`
+runtime=$((end_time-start_time))
+echo "Run time was ${runtime}"
