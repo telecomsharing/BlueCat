@@ -12,8 +12,11 @@
 %post --nochroot
 
 # copy configuration files to the skel of the new ISO
-cp -a /home/bluecat/\.* $INSTALL_ROOT/etc/skel
-sed -i -e 's/Generic release/BlueCat/g' /etc/fedora-release /etc/issue
+cp -a /root/BlueCat/config/\.* $INSTALL_ROOT/etc/skel
+cp -a /root/BlueCat/ns-3 $INSTALL_ROOT/etc/skel
+
+# change release name
+sed -i -e 's/Generic release 32 (Generic)/BlueCat 2/g' $INSTALL_ROOT/etc/fedora-release $INSTALL_ROOT/etc/issue
 
 %end
 
@@ -50,17 +53,17 @@ fi
 mkdir -p /home/liveuser/.config/
 cat > /home/liveuser/.config/kickoffrc << MENU_EOF
 [Favorites]
-FavoriteURLs=/usr/share/applications/firefox.desktop,/usr/share/applications/org.kde.dolphin.desktop,/usr/share/applications/systemsettings.desktop,/usr/share/applications/org.kde.konsole.desktop,/home/liveuser/Desktop/liveinst.desktop
+FavoriteURLs=/usr/share/applications/firefox.desktop,/usr/share/applications/org.kde.dolphin.desktop,/usr/share/applications/systemsettings.desktop,/usr/share/applications/org.kde.konsole.desktop,/usr/share/applications/liveinst.desktop
 MENU_EOF
 
 # show liveinst.desktop on desktop and in menu
 sed -i 's/NoDisplay=true/NoDisplay=false/' /usr/share/applications/liveinst.desktop
+sed -i '/Icon/ d' /usr/share/applications/liveinst.desktop
+echo "Icon=install" >> /usr/share/applications/liveinst.desktop
 # set executable bit disable KDE security warning
 chmod +x /usr/share/applications/liveinst.desktop
 mkdir /home/liveuser/Desktop
 cp -a /usr/share/applications/liveinst.desktop /home/liveuser/Desktop/
-sed -i '/Icon/ d' /home/liveuser/Desktop/liveinst.desktop
-echo "Icon=install" >> /home/liveuser/Desktop/liveinst.desktop
 
 # Set akonadi backend
 mkdir -p /home/liveuser/.config/akonadi

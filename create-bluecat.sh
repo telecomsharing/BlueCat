@@ -1,10 +1,10 @@
 #!/bin/bash
 # Title           :create-bluecat.sh
 # Description     :This script will create BlueCat.
-# Author		  :Luis Sequeira
+# Author	  :Luis Sequeira
 # Date            :11/05/2020
-# Version         :2.2    
-# Usage		      :./create-bluecat.sh --games --clean
+# Version         :2.3
+# Usage		  :./create-bluecat.sh --games --clean
 #==============================================================================
 
 working_dir=${PWD}
@@ -12,18 +12,21 @@ working_dir=${PWD}
 while [ -n "$1" ]; do
     case "$1" in
 	   --games)
+	    echo ""
             echo "==========================="
             echo "BlueCat Games will be created"
             echo "==========================="
             GAMES=true
             ;;
         --clean)
+	    echo ""
             echo "==========================="
             echo "Old files, cahe and tmp will be clean"
             echo "==========================="
             CLEAN=true
             ;;
         *)
+	    echo ""
             echo "==========================="
             echo "Option $1 not recognized"
             echo "==========================="
@@ -51,18 +54,19 @@ echo "Creating iso"
 echo "==========================="
 
 setenforce 0
-sleep 1
 
 if [ ! -z "$GAMES" ]; then
 	livecd-creator --verbose \
 		--config=${working_dir}/bluecat-games.ks \
 		--fslabel=BlueCat-Games \
-		--cache=/var/cache/live
+		--cache=/var/cache/live \
+		--logfile=${working_dir}/bluecat-games.log
 else
 	livecd-creator --verbose \
 		--config=${working_dir}/bluecat.ks \
 		--fslabel=BlueCat \
-		--cache=/var/cache/live
+		--cache=/var/cache/live \
+		--logfile=${working_dir}/bluecat.log
 fi
 
 setenforce 1
