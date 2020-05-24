@@ -1,0 +1,86 @@
+2020-05-24T11:17:24 [INFO ] org.kde.pim.akonadiserver: Starting up the Akonadi Server...
+2020-05-24T11:17:25 [INFO ] org.kde.pim.akonadiserv2020-05-24T11:17:25 [INFO ] org.kde.pim.akonadicontrol: Akonadi server is now operational.
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadicontrol: Application '/usr/bin/akonadi_contacts_resource' exited normally...
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadicontrol: Application '/usr/bin/akonadi_archivemail_agent' exited normally...
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadicontrol: Application '/usr/bin/akonadi_newmailnotifier_agent' exited normally...
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadicontrol: Application '/usr/bin/akonadi_ical_resource' exited normally...
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadicontrol: Application '/usr/bin/akonadi_maildir_resource' exited normally...
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadicontrol: Application '/usr/bin/akonadi_followupreminder_agent' exited normally...
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadicontrol: Application '/usr/bin/akonadi_sendlater_agent' exited normally...
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadicontrol: Application '/usr/bin/akonadi_indexing_agent' exited normally...
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadicontrol: Application '/usr/bin/akonadi_maildispatcher_agent' exited normally...
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadicontrol: Application '/usr/bin/akonadi_migration_agent' exited normally...
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadicontrol: Application '/usr/bin/akonadi_birthdays_resource' exited normally...
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadicontrol: Application '/usr/bin/akonadi_mailfilter_agent' exited normally...
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadicontrol: Application '/usr/bin/akonadi_unifiedmailbox_agent' exited normally...
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadicontrol: Application '/usr/bin/akonadi_akonotes_resource' exited normally...
+2020-05-24T11:27:09 [INFO ] org.kde.pim.akonadicontrol: Application '/usr/bin/akonadiserver' exited normally...
+tificationSubscriber(0x7f6c4c002f20) )
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c002f20) identified as "ETMCalendarMonitor - 94503844642160"
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: New notification connection (registered as Akonadi::Server::NotificationSubscriber(0x7f6c4c061f60) )
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c005390) identified as "AgentBaseChangeRecorder - 94066280966064"
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c01ed10) identified as "AgentBaseChangeRecorder - 94375348868192"
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c012d20) identified as "AgentBaseChangeRecorder - 94874307897968"
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: New notification connection (registered as Akonadi::Server::NotificationSubscriber(0x7f6c4c0751a0) )
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c01f730) identified as "AgentBaseChangeRecorder - 94789394082672"
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c0751a0) identified as "akonadi_birthdays_resource - 94789394236640"
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c00f0e0) identified as "AgentBaseChangeRecorder - 94154079742816"
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: New notification connection (registered as Akonadi::Server::NotificationSubscriber(0x7f6c4c086c40) )
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: New notification connection (registered as Akonadi::Server::NotificationSubscriber(0x7f6c4c0864d0) )
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c029f70) identified as "AgentBaseChangeRecorder - 94129444688640"
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: New notification connection (registered as Akonadi::Server::NotificationSubscriber(0x7f6c4c087110) )
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: New notification connection (registered as Akonadi::Server::NotificationSubscriber(0x7f6c4c0ab830) )
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: New notification connection (registered as Akonadi::Server::NotificationSubscriber(0x7f6c4c085670) )
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c020b50) identified as "AgentBaseChangeRecorder - 93979740393168"
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c0155f0) identified as "AgentBaseChangeRecorder - 94656723035712"
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c061f60) identified as "AgentBaseChangeRecorder - 94043415370016"
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c0ab830) identified as "akonadi_maildispatcher_agent - 94043415478656"
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c085670) identified as "SpecialCollectionsMonitor - 94043415453120"
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c086c40) identified as "AgentBaseChangeRecorder - 94527223248992"
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: New notification connection (registered as Akonadi::Server::NotificationSubscriber(0x7f6c4c0f1890) )
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: New notification connection (registered as Akonadi::Server::NotificationSubscriber(0x7f6c4c0cdd20) )
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c087110) identified as "AgentBaseChangeRecorder - 94478254702000"
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c0cdd20) identified as "UnifiedMailboxChangeRecorder - 140729077884976"
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber "" disconnected
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: New notification connection (registered as Akonadi::Server::NotificationSubscriber(0x7f6c4c135690) )
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: New notification connection (registered as Akonadi::Server::NotificationSubscriber(0x7f6c4c0ce530) )
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: New notification connection (registered as Akonadi::Server::NotificationSubscriber(0x7f6c4c135690) )
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: New notification connection (registered as Akonadi::Server::NotificationSubscriber(0x7f6c4c0cdc40) )
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c0864d0) identified as "AgentBaseChangeRecorder - 94101026397808"
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c0ce530) identified as "MailFilter Kernel ETM - 94101026538848"
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c135690) identified as "MailFilterCollectionMonitor - 94101026506064"
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c0cdc40) identified as "MailFilterItemMonitor - 140307186330080"
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: New notification connection (registered as Akonadi::Server::NotificationSubscriber(0x7f6c4c15a500) )
+2020-05-24T11:17:26 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c15a500) identified as "SpecialCollectionsMonitor - 140307186459616"
+2020-05-24T11:17:27 [INFO ] org.kde.pim.akonadiserver: Subscriber "" disconnected
+2020-05-24T11:17:27 [INFO ] org.kde.pim.akonadiserver: New notification connection (registered as Akonadi::Server::NotificationSubscriber(0x7f6c4c195180) )
+2020-05-24T11:17:27 [INFO ] org.kde.pim.akonadiserver: New notification connection (registered as Akonadi::Server::NotificationSubscriber(0x7f6c4c0f2240) )
+2020-05-24T11:17:27 [INFO ] org.kde.pim.akonadiserver: New notification connection (registered as Akonadi::Server::NotificationSubscriber(0x7f6c4c195180) )
+2020-05-24T11:17:27 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c0f1890) identified as "AgentBaseChangeRecorder - 94490942167984"
+2020-05-24T11:17:27 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c0f2240) identified as "Archive Mail Kernel ETM - 94490942258528"
+2020-05-24T11:17:27 [INFO ] org.kde.pim.akonadiserver: Subscriber Akonadi::Server::NotificationSubscriber(0x7f6c4c195180) identified as "ArchiveMailCollectionMonitor - 94490942233248"
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "ETMCalendarMonitor - 94503844642160" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "AgentBaseChangeRecorder - 94656723035712" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "AgentBaseChangeRecorder - 94154079742816" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "AgentBaseChangeRecorder - 94129444688640" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "AgentBaseChangeRecorder - 94101026397808" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "MailFilter Kernel ETM - 94101026538848" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "MailFilterItemMonitor - 140307186330080" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "MailFilterCollectionMonitor - 94101026506064" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "SpecialCollectionsMonitor - 140307186459616" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "AgentBaseChangeRecorder - 94527223248992" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "AgentBaseChangeRecorder - 93979740393168" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "AgentBaseChangeRecorder - 94066280966064" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "AgentBaseChangeRecorder - 94621177860720" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "AgentBaseChangeRecorder - 94375348868192" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "AgentBaseChangeRecorder - 94043415370016" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "AgentBaseChangeRecorder - 94478254702000" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "SpecialCollectionsMonitor - 94043415453120" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "UnifiedMailboxChangeRecorder - 140729077884976" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "ArchiveMailCollectionMonitor - 94490942233248" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "AgentBaseChangeRecorder - 94789394082672" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "akonadi_maildispatcher_agent - 94043415478656" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "Archive Mail Kernel ETM - 94490942258528" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "akonadi_birthdays_resource - 94789394236640" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "AgentBaseChangeRecorder - 94490942167984" disconnected
+2020-05-24T11:27:06 [INFO ] org.kde.pim.akonadiserver: Subscriber "AgentBaseChangeRecorder - 94874307897968" disconnected
