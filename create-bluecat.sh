@@ -106,4 +106,4 @@ fi
 
 end_time=`date +%s`
 runtime=$((end_time-start_time))
-echo "Run time was ${runtime}"
+echo "Run time was ${runtime} seconds"
