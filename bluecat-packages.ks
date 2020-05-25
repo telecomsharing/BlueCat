@@ -64,43 +64,43 @@ kate
 kdiff3
 eclipse
 icedtea-web
-mercurial 
-gsl-devel 
-qt5-devel 
-valgrind 
-graphviz 
-ImageMagick 
-python-sphinx 
-texlive-fncychap 
-texlive-capt-of 
-texlive-tabulary 
-texlive-eqparbox 
-texlive-epstopdf 
-texlive-framed 
-texlive-dvipng 
-texlive-threeparttable 
-texlive-wrapfig 
-ImageMagick 
-flex 
-bison 
-sqlite-devel 
-uncrustify 
-openmpi 
-openmpi-devel 
-goocanvas-devel 
-graphviz-devel 
-python-kiwi 
+mercurial
+gsl-devel
+qt5-devel
+# valgrind
+# graphviz
+# ImageMagick
+# python-sphinx
+# texlive-fncychap
+# texlive-capt-of
+# texlive-tabulary
+# texlive-eqparbox
+# texlive-epstopdf
+# texlive-framed
+# texlive-dvipng
+# texlive-threeparttable
+# texlive-wrapfig
+# ImageMagick
+# flex
+# bison
+# sqlite-devel
+# uncrustify
+# openmpi
+# openmpi-devel
+# goocanvas-devel
+# graphviz-devel
+# python-kiwi
 # pygoocanvas # not yet in f32
-ipython 
-cmake 
-clang-devel 
-llvm-devel 
-llvm-static 
+# ipython
+# cmake
+# clang-devel
+# llvm-devel
+# llvm-static
 cvs
-pygobject2
-pygobject3-devel 
-gobject-introspection-devel 
-goocanvas2-devel 
+# pygobject2
+# pygobject3-devel
+# gobject-introspection-devel
+# goocanvas2-devel
 
 # Desktop
 dolphin-plugins
@@ -111,7 +111,7 @@ nextcloud-client
 lxc
 lxc-templates
 lxc-extra
-debootstrap 
+debootstrap
 libvirt
 perl
 gpg
@@ -134,8 +134,8 @@ gstreamer1-plugins-bad-freeworld
 gstreamer1-plugins-good-extras
 gstreamer1-plugins-ugly
 gstreamer-ffmpeg
-xine-lib-extras 
-xine-lib-extras-freeworld 
+xine-lib-extras
+xine-lib-extras-freeworld
 # k3b-extras-freeworld # not yet in f32
 gstreamer-plugins-bad
 # gstreamer-plugins-bad-free-extras # not yet in f32
