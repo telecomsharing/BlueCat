@@ -8,7 +8,7 @@
 
 
 %include bluecat-repo.ks
-#%include bluecat-packages.ks
+%include bluecat-packages.ks
 %include bluecat-live.ks
 
 # DVD payload

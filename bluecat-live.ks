@@ -12,8 +12,11 @@
 %post --nochroot
 
 # copy configuration files to the skel of the new ISO
-cp -a /root/BlueCat/config/\.* $INSTALL_ROOT/etc/skel
-cp -a /root/BlueCat/ns-3 $INSTALL_ROOT/etc/skel
+cp -r /root/BlueCat/config/.config $INSTALL_ROOT/etc/skel
+cp -r /root/BlueCat/config/.local $INSTALL_ROOT/etc/skel
+cp -r /root/BlueCat/config/.kde $INSTALL_ROOT/etc/skel
+cp -r /root/BlueCat/ns-3 $INSTALL_ROOT/etc/skel
+cp /root/BlueCat/config/etc/sddm.conf.d/kde_settings.conf $INSTALL_ROOT/etc/sddm.conf.d/
 
 # change release name
 sed -i -e 's/Generic release 32 (Generic)/BlueCat 2/g' $INSTALL_ROOT/etc/fedora-release $INSTALL_ROOT/etc/issue

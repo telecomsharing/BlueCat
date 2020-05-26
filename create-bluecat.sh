@@ -48,6 +48,9 @@ if [ ! -z "$CLEAN" ]; then
 	if [ -f "${working_dir}/BlueCat-Games.iso" ]; then
 		rm -f BlueCat-Games.iso*
 	fi
+	if [ -f "${working_dir}/BlueCat.log" ]; then
+                rm -f BlueCat.log
+        fi
 	rm -rf /var/cache/live/*
 	rm -rf /var/tmp/*
 fi
