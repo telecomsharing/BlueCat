@@ -16,6 +16,7 @@ cp -r /root/BlueCat/config/.config $INSTALL_ROOT/etc/skel
 cp -r /root/BlueCat/config/.local $INSTALL_ROOT/etc/skel
 cp -r /root/BlueCat/config/.kde $INSTALL_ROOT/etc/skel
 cp -r /root/BlueCat/ns-3 $INSTALL_ROOT/etc/skel
+mkdir -p $INSTALL_ROOT/etc/sddm.conf.d
 cp /root/BlueCat/config/etc/sddm.conf.d/kde_settings.conf $INSTALL_ROOT/etc/sddm.conf.d/
 
 # change release name
