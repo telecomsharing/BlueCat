@@ -1,17 +1,28 @@
 # bluecat-live.ks
 #
+# Description:
+# - BlueCat live user configuration for the K Desktop Environment (KDE)
+#
 # Maintainer(s):
 # - Luis Sequeira <sequeira@telecomsharing.com>
 
 %include /usr/share/spin-kickstarts/fedora-live-base.ks
 %include /usr/share/spin-kickstarts/fedora-kde-common.ks
 
-#%post --nochroot
+%post --nochroot
 
-# We copy the files of our machine's user test to the skel of the new ISO
-# cp -a /home/liveuser/\. $INSTALL_ROOT/etc/skel
+# copy configuration files to the skel of the new ISO
+cp -r /root/BlueCat/config/.config $INSTALL_ROOT/etc/skel
+cp -r /root/BlueCat/config/.local $INSTALL_ROOT/etc/skel
+cp -r /root/BlueCat/config/.kde $INSTALL_ROOT/etc/skel
+cp -r /root/BlueCat/ns-3 $INSTALL_ROOT/etc/skel
+mkdir -p $INSTALL_ROOT/etc/sddm.conf.d
+cp /root/BlueCat/config/etc/sddm.conf.d/kde_settings.conf $INSTALL_ROOT/etc/sddm.conf.d/
 
-#%end
+# change release name
+sed -i -e 's/Generic release 32 (Generic)/BlueCat 2/g' $INSTALL_ROOT/etc/fedora-release $INSTALL_ROOT/etc/issue
+
+%end
 
 %post
 
@@ -51,6 +62,8 @@ MENU_EOF
 
 # show liveinst.desktop on desktop and in menu
 sed -i 's/NoDisplay=true/NoDisplay=false/' /usr/share/applications/liveinst.desktop
+sed -i '/Icon/ d' /usr/share/applications/liveinst.desktop
+echo "Icon=install" >> /usr/share/applications/liveinst.desktop
 # set executable bit disable KDE security warning
 chmod +x /usr/share/applications/liveinst.desktop
 mkdir /home/liveuser/Desktop

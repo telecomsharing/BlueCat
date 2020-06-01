@@ -1,7 +1,7 @@
-# bluecat.ks
+# bluecat-games.ks
 #
 # Description:
-# - BlueCat is a Fedora Live Remix with the K Desktop Environment (KDE)
+# - BlueCat Games is a Fedora Live Remix with the K Desktop Environment (KDE)
 #
 # Maintainer(s):
 # - Luis Sequeira <sequeira@telecomsharing.com>
@@ -9,10 +9,12 @@
 
 %include bluecat-repo.ks
 %include bluecat-packages.ks
+%include bluecat-packages-games.ks
 %include bluecat-live.ks
 
+
 # DVD payload
-part / --size=15000
+part / --size=25000
 
 
 %packages
