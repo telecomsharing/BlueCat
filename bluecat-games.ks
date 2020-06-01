@@ -14,7 +14,7 @@
 
 
 # DVD payload
-part / --size=15000
+part / --size=25000
 
 
 %packages

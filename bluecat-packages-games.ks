@@ -9,7 +9,7 @@
 %packages
 
 # Games
-kdegames
+# @kdegames
 playonlinux
 steam
 knights

@@ -3,14 +3,14 @@
 # Description     :This script will create BlueCat.
 # Author	  :Luis Sequeira
 # Date            :11/05/2020
-# Version         :2.3
+# Version         :2.4
 # Usage		  :./create-bluecat.sh --games --clean
 #==============================================================================
 
 start_time=`date +%s`
 echo ""
 echo "Starting at ${start_time}"
-working_dir=${PWD}
+export BLUECAT_DIR=${PWD}
 
 while [ -n "$1" ]; do
     case "$1" in
@@ -42,14 +42,17 @@ if [ ! -z "$CLEAN" ]; then
 	echo "==========================="
 	echo "Cleaning old files, cahe and tmp"
 	echo "==========================="
-	if [ -f "${working_dir}/BlueCat.iso" ]; then
-		rm -f BlueCat.iso*
+	if [ -f "${BLUECAT_DIR}/BlueCat.iso" ]; then
+		rm -f ${BLUECAT_DIR}/BlueCat.iso*
 	fi
-	if [ -f "${working_dir}/BlueCat-Games.iso" ]; then
-		rm -f BlueCat-Games.iso*
+	if [ -f "${BLUECAT_DIR}/BlueCat-Games.iso" ]; then
+		rm -f ${BLUECAT_DIR}/BlueCat-Games.iso*
 	fi
-	if [ -f "${working_dir}/BlueCat.log" ]; then
-                rm -f BlueCat.log
+	if [ -f "${BLUECAT_DIR}/BlueCat.log" ]; then
+                rm -f ${BLUECAT_DIR}/BlueCat.log
+        fi
+        if [ -f "${BLUECAT_DIR}/BlueCat-Games.log" ]; then
+                rm -f ${BLUECAT_DIR}/BlueCat-Games.log
         fi
 	rm -rf /var/cache/live/*
 	rm -rf /var/tmp/*
@@ -63,16 +66,16 @@ setenforce 0
 
 if [ ! -z "$GAMES" ]; then
 	livecd-creator --verbose \
-		--config=${working_dir}/bluecat-games.ks \
+		--config=${BLUECAT_DIR}/bluecat-games.ks \
 		--fslabel=BlueCat-Games \
 		--cache=/var/cache/live \
-		--logfile=${working_dir}/bluecat-games.log
+		--logfile=${BLUECAT_DIR}/BlueCat-Games.log
 else
 	livecd-creator --verbose \
-		--config=${working_dir}/bluecat.ks \
+		--config=${BLUECAT_DIR}/bluecat.ks \
 		--fslabel=BlueCat \
 		--cache=/var/cache/live \
-		--logfile=${working_dir}/bluecat.log
+		--logfile=${BLUECAT_DIR}/BlueCat.log
 fi
 
 setenforce 1
@@ -82,26 +85,26 @@ echo "Livecd-creator has finished"
 echo "==========================="
 
 if [ ! -z "$GAMES" ]; then
-	if [ -f "${working_dir}/BlueCat-Games.iso" ]; then
+	if [ -f "${BLUECAT_DIR}/BlueCat-Games.iso" ]; then
 		echo "BlueCat Games has been created"
 		echo "Creating md5 file"
-		md5sum BlueCat-Games.iso > BlueCat-Games.iso.md5
+		md5sum ${BLUECAT_DIR}/BlueCat-Games.iso > ${BLUECAT_DIR}/BlueCat-Games.iso.md5
 		echo "Checking md5 file"
-		md5sum -c BlueCat-Games.iso.md5
+		md5sum -c ${BLUECAT_DIR}/BlueCat-Games.iso.md5
 		echo "Files created:"
-		ls -l ${working_dir}/BlueCat*
+		ls -l ${BLUECAT_DIR}/BlueCat*
 	else
 		echo "There was a error and BlueCat.iso was not created"
 	fi
 else
-	if [ -f "${working_dir}/BlueCat.iso" ]; then
+	if [ -f "${BLUECAT_DIR}/BlueCat.iso" ]; then
 		echo "BlueCat has been created"
 		echo "Creating md5 file"
-		md5sum BlueCat.iso > BlueCat.iso.md5
+		md5sum ${BLUECAT_DIR}/BlueCat.iso > ${BLUECAT_DIR}/BlueCat.iso.md5
 		echo "Checking md5 file"
-		md5sum -c BlueCat.iso.md5
+		md5sum -c ${BLUECAT_DIR}/BlueCat.iso.md5
 		echo "Files created:"
-		ls -l ${working_dir}/BlueCat*
+		ls -l ${BLUECAT_DIR}/BlueCat*
 	else
 		echo "There was a error and BlueCat.iso was not created"
 	fi
